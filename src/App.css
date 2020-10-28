@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://media.discordapp.net/attachments/760894093651476551/771090429046292530/header-bg.jpg?width=1068&height=703");
+  background-size: cover;
+}
+
+header {
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bootstrap {
+  height: 40%;
+  width: 40%;
+}
+
+header > .items {
+  width: 60%;
+  height: 100%;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  margin-right: 2vw;
+  
+}
+
+.items > a:hover {
+  color: yellow;
+}
+
+.menu {
+  height: 5vh;
+  width: 25vw;
+  background-color: #ebcd39;
+  color: white;
+  border-radius: 10%;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 12%;
+  position: absolute;
+}
+
+.mobile {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  position: absolute;
+  justify-content: space-around;
+  margin-top: -20px;
+  padding-bottom: 20px;
+}
+
+.mobile > a {
+  margin-left: 50px;
+}
+
+main {
+  height: 90vh;
+  width: 100vw;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome {
+  font-size: 30px;
+  font-style: italic;
+  margin-top: 30vh;
+}
+
+.meet {
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: -1vh;
+}
+
+.tmm-button {
+  background-color: #ebcd39;
+  color: white;
+  border-radius: 10%;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 20px 50px;
+  margin-top: 1vh;
+}
+
+@media screen and (max-width: 991px) {
+  .items{
+    visibility: hidden;
+  }
+  header {
+    background-color: black;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .menu{
+    visibility: hidden;
+  }
+}
+
